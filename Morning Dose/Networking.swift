@@ -4,8 +4,8 @@ class Networking {
     static func loadData() async throws -> [Quote]{
         //  crate a file in bundle "data.txt" and store API Key
         let path = Bundle.main.path(forResource: "data", ofType: "txt")
-        let apiKey = try String(contentsOfFile: path!, encoding: String.Encoding.utf8)
-        
+        var apiKey = try String(contentsOfFile: path!, encoding: String.Encoding.utf8)
+        apiKey = apiKey.trimmingCharacters(in: .whitespaces)
         
         
         guard let url = URL(string: "https://api.api-ninjas.com/v1/quotes?category=happiness")else { fatalError("Invalid URL") }

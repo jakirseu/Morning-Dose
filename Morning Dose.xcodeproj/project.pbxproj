@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04767C7D2ADDCDA9001AAA24 /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04767C7C2ADDCDA9001AAA24 /* data.txt */; };
 		047EBE8A2ADD60C1004B42B6 /* Morning_DoseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EBE892ADD60C1004B42B6 /* Morning_DoseApp.swift */; };
 		047EBE8C2ADD60C1004B42B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EBE8B2ADD60C1004B42B6 /* ContentView.swift */; };
 		047EBE8E2ADD60C3004B42B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047EBE8D2ADD60C3004B42B6 /* Assets.xcassets */; };
@@ -14,10 +15,10 @@
 		047EBE982ADD61C4004B42B6 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EBE972ADD61C4004B42B6 /* Quote.swift */; };
 		047EBE9A2ADD631C004B42B6 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EBE992ADD631C004B42B6 /* Networking.swift */; };
 		047EBE9E2ADD7493004B42B6 /* QuoteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EBE9D2ADD7493004B42B6 /* QuoteCard.swift */; };
-		047EBEA22ADDC7D8004B42B6 /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047EBEA12ADDC7D8004B42B6 /* data.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04767C7C2ADDCDA9001AAA24 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 		047EBE862ADD60C1004B42B6 /* Morning Dose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Morning Dose.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		047EBE892ADD60C1004B42B6 /* Morning_DoseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Morning_DoseApp.swift; sourceTree = "<group>"; };
 		047EBE8B2ADD60C1004B42B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,7 +27,6 @@
 		047EBE972ADD61C4004B42B6 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		047EBE992ADD631C004B42B6 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		047EBE9D2ADD7493004B42B6 /* QuoteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCard.swift; sourceTree = "<group>"; };
-		047EBEA12ADDC7D8004B42B6 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +63,10 @@
 				047EBE8B2ADD60C1004B42B6 /* ContentView.swift */,
 				047EBE972ADD61C4004B42B6 /* Quote.swift */,
 				047EBE992ADD631C004B42B6 /* Networking.swift */,
+				04767C7C2ADDCDA9001AAA24 /* data.txt */,
 				047EBE8D2ADD60C3004B42B6 /* Assets.xcassets */,
 				047EBE8F2ADD60C3004B42B6 /* Preview Content */,
 				047EBE9D2ADD7493004B42B6 /* QuoteCard.swift */,
-				047EBEA12ADDC7D8004B42B6 /* data.txt */,
 			);
 			path = "Morning Dose";
 			sourceTree = "<group>";
@@ -138,7 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				047EBE912ADD60C3004B42B6 /* Preview Assets.xcassets in Resources */,
-				047EBEA22ADDC7D8004B42B6 /* data.txt in Resources */,
+				04767C7D2ADDCDA9001AAA24 /* data.txt in Resources */,
 				047EBE8E2ADD60C3004B42B6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
