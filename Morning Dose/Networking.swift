@@ -2,11 +2,16 @@ import Foundation
 
 class Networking {
     static func loadData() async throws -> [Quote]{
-      
+        //  crate a file in bundle "data.txt" and store API Key
+        let path = Bundle.main.path(forResource: "data", ofType: "txt")
+        let apiKey = try String(contentsOfFile: path!, encoding: String.Encoding.utf8)
+        
+        
+        
         guard let url = URL(string: "https://api.api-ninjas.com/v1/quotes?category=happiness")else { fatalError("Invalid URL") }
         // set api key
         var request = URLRequest(url: url)
-        request.setValue("get api key from api-ninjas.com", forHTTPHeaderField: "X-Api-Key")
+        request.setValue(apiKey, forHTTPHeaderField: "X-Api-Key")
         // receive the data
         let (data, _) = try await URLSession.shared.data(for: request)
         // decode JSON

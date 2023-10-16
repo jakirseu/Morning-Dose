@@ -1,9 +1,10 @@
 import SwiftUI
+import SwiftData
+ 
 struct ContentView: View {
-    
+
     @State var newQuote: [Quote] = []
     @State private var isFetchingData = false
-    
     var body: some View {
         ZStack {
             Image("background")
@@ -16,6 +17,7 @@ struct ContentView: View {
                     ProgressView("Fetching data...")
                 } else {
                     QuoteCard(newQuote: newQuote)
+                    
                 }
                 
                 Button("Get A New Quote") {
@@ -47,9 +49,12 @@ struct ContentView: View {
             }
         }
     }
+    
+    
 }
 
 
 #Preview {
     ContentView()
+    
 }
